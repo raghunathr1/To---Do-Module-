@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: #f0f2f5;
+}
+
+.container {
+    width: 350px;
+    margin: 70px auto;
+    background: white;
+    padding: 25px;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 8px;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    background: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #006bd1;
+}
+
+.task-box {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+ul {
+    text-align: left;
+    padding-left: 0;
+}
+
+li {
+    background: #ececec;
+    padding: 10px;
+    margin: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+.logout {
+    background: red;
+}
+
+a {
+    color: #006ad3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#msg {
+    color: red;
+    margin-top: 10px;
+}
+
+/*  New CSS for EDIT + DELETE button + Modal            */
+/* ------------------------------------------------------ */
+
+/* Edit button style */
+.edit-btn {
+    background: green;
+    border: none;
+    padding: 6px 10px;
+    font-size: 12px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+}
+.edit-btn:hover {
+    background: darkorange;
+}
+
+/* Delete button style (optional if already in JS) */
+.delete-btn {
+    background: red;
+    border: none;
+    padding: 6px 10px;
+    font-size: 12px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+}
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* Modal background screen */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+/* Modal box */
+.modal-content {
+    background: white;
+    width: 330px;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.modal-content input {
+    width: 90%;
+}
+
+.modal-content button {
+    width: auto;
+    padding: 8px 14px;
+    margin: 6px;
+}
