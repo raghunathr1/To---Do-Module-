@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Your To-Do List</h2>
+
+    <div class="task-box">
+        <input type="text" id="taskInput" placeholder="Enter new task">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <button class="logout" onclick="logout()">Logout</button>
+
+</div>
+
+<!-- 🔥 Edit Modal -->
+<div id="editModal" class="modal">
+    <div class="modal-content">
+        <h3>Edit Task</h3>
+        <input type="text" id="editTaskInput">
+        <button onclick="updateTask()">Update</button>
+        <button onclick="closeEditModal()">Cancel</button>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+<script>
+    loadTasks();
+</script>
+
+</body>
+</html>
